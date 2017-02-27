@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="application/javascript" src="js/sportFrame.js"></script>
+    <script type="application/javascript" src="js/xibu.js"></script>
+    <script src="frame/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function(){
+            var oRoll=document.getElementById('roll');
+            var oUl=oRoll.getElementsByTagName('ul')[0];
+            var aImg=oUl.getElementsByTagName('img');
+
+            lunboqi(oUl,aImg);
+            $(function(){
+                $(".ma01").hover(function(){
+                   $(".ma01").css({background:'url("images/h-1-over.png")'});
+                },function(){
+                    $(".ma01").css({background:'url("images/h-1.png")'});
+                })
+                $(".ma02").hover(function(){
+                    $(".ma02").css({background:'url("images/h-2-over.png")'});
+                },function(){
+                    $(".ma02").css({background:'url("images/h-2.png")'});
+                })
+                $(".ma03").hover(function(){
+                    $(".ma03").css({background:'url("images/h-3-over.png")'});
+                },function(){
+                    $(".ma03").css({background:'url("images/h-3.png")'});
+                })
+                $(".ma04").hover(function(){
+                    $(".ma04").css({background:'url("images/h-4-over.png")'});
+                },function(){
+                    $(".ma04").css({background:'url("images/h-4.png")'});
+                })
+            })
+        });
+
+        $(function(){
+            $(".poh01").hover(function(){
+                $(".poh01").fadeTo(1000,0.1);
+            },function(){
+                $(".poh01").fadeTo(1000,1);
+            });
+            $(".poh02").hover(function(){
+                $(".poh02").fadeTo(1000,0.1);
+            },function(){
+                $(".poh02").fadeTo(1000,1);
+            });
+            $(".poh03").hover(function(){
+                $(".poh03").fadeTo(1000,0.1);
+            },function(){
+                $(".poh03").fadeTo(1000,1);
+            });
+            $(".poh04").hover(function(){
+                $(".poh04").fadeTo(1000,0.1);
+            },function(){
+                $(".poh04").fadeTo(1000,1);
+            });
+
+
+//            $(".poh01").fadeIn(1000,"linear");
+//
+//            $(".poh02").delay(2000).fadeIn(1000,"linear");
+//
+//            $(".poh03").delay(3000).fadeIn(1000,"linear");
+//
+//            $(".poh04").delay(4000).fadeIn(1000,"linear");
+//            $(".poh04").delay(1000).fadeOut(1000,"linear");
+//
+//            $(".poh03").delay(3000).fadeOut(1000,"linear");
+//
+//            $(".poh02").delay(5000).fadeOut(1000,"linear");
+//
+//            $(".poh01").delay(8000).fadeOut(1000,"linear");
+
+
+
+
+        })
+
+    </script>
+    <link rel="stylesheet" href="xibu.css"/>
+</head>
+<body>
+<div id="box">
+    <div id="top">
+        <div id="top01"><img src="images/phone.png" /><span>客服热线：4000-000-000</span><span>|</span><span>关注我们</span>
+            <img src="images/weibo.png"/><img src="images/weixin.png"></div>
+        <div id="top02"><span>您好！欢迎来到西部开源技术中心</span><span>|</span><span>帮助中心</span></div>
+        </div>
+    <div id="head">
+        <div id="head01"><img src="images/logo.png"></div>
+        <div id="head02"><img src="images/logo-left.png"></div>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a>关于开源</a></li>
+            <li><a>新闻动态</a></li>
+            <li><a>教育培训</a></li>
+            <li><a>学习视频</a></li>
+            <li><a>就业招聘</a></li>
+            <li><a>考务系统</a></li>
+            <li><a>企业技术支持</a></li>
+            <li><a>联系我们</a></li>
+        </ul>
+        <input type="text" id="find"  />
+        <button id="btn">GO</button>
+    </div>
+    <div id="roll">
+        <ul>
+            <li><img src="images/0.jpg"></li>
+            <li><img src="images/1.jpg"></li>
+            <li><img src="images/2.jpg"></li>
+            <li><img src="images/3.jpg"></li>
+        </ul>
+    </div>
+    <div id="middle">
+        <span class="font01">最新公告【西部开源技术中心参加2015年西部教育论坛】</span>
+        <span class="font02">账号：</span><input type="text" id="find01">
+        <span class="font03">密码：</span><input type="text" id="find02"/>
+        <button id="btn02">登录</button>
+    </div>
+    <div id="text">
+        <div id="text03">
+            <ul>
+                <li><img src="images/float_bar_qq.png"></li>
+                <li><img src="images/float_bar_phone.png"></li>
+                <li><img src="images/float_bar_weichat.png"></li>
+                <li><img src="images/float_bar_top.png"></li>
+            </ul>
+        </div>
+        <div id="text04"><img src="images/float_bar_qq_info.png"/></div>
+        <div id="text01">
+            <span class="font04">Education教育培训</span><br/>
+            <span class="font05">西部开源技术中心独创五大就业方向课程</span><br/>
+            <span class="font06">LINUX系统运维工程师/JAVA EE工程师/C开发工程师/Ａｎｄｒｏｉｄ工程师／Ｗｅｂ工程师</span>
+        </div>
+
+        <div id="text02">
+            <button  id="btn03"><img src="images/main_wrapper_left.png"></button>
+            <div class="ma01"></div>
+            <div class="ma02"></div>
+            <div class="ma03"></div>
+            <div class="ma04"></div>
+            <button  id="btn04"><img src="images/main_wrapper_right.png"></button>
+        </div>
+    </div>
+    <div id="main">
+        <div id="main01">
+            <div id="main01_1">
+                <div class="font07"><a href="#"><img src="images/news.png"/>新闻</a></div>
+                <div class="font08"><a href="#"><img src="images/notice.png"/>公告</a></div>
+                <div class="font09"><a href=""><img src="images/job.png"/>招聘</a></div>
+            </div>
+            <div id="main01_2">
+                <img src="images/pic.png">
+                <ul>
+                    <li><h4>2015年11月11日</h4><span>西部开源中心毕业学员刘某某在网易实习。</span></li>
+                    <li><h4>2015年11月13日</h4><span>西部开源中心毕业学员刘某某在网易实习。</span></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main02">
+            <div id="main02_1">
+                <div class="font10"><img src="images/info.png">就业信息</div>
+                <div class="font11"><i>了解更多》</i></div>
+                <div class="font12"></div>
+            </div>
+            <div id="main02_2">
+                <div class="font13"><img src="images/info.png">企业案例</div>
+                <div class="font14"><i>了解更多》</i></div>
+                <div class="font15"></div>
+            </div>
+        </div>
+    </div>
+    <div id="text05">
+        <span class="font16">Students 优秀学员</span><br/>
+        <span class="font17">西部开源技术中心成功为多家优秀企业输送人才</span><br/>
+        <span class="font18">百度/网易/京东/阿里巴巴/腾讯/小米/华为</span>
+    </div>
+    <div id="poho">
+        <button class="btn_01"><img src="images/main_wrapper_left.png"></button>
+        <ul>
+            <li class="poh01"> <img src="images/main_wrapper-1.png"></li>
+            <li class="poh02"><img src="images/main_wrapper-2.png"></li>
+            <li class="poh03"><img src="images/main_wrapper-3.png"></li>
+            <li class="poh04"><img src="images/main_wrapper-4.png"></li>
+        </ul>
+        <button class="btn_02"><img src="images/main_wrapper_right.png"></button>
+    </div>
+    <div id="list">
+        <ul>
+            <li class="list01">合作企业</li>
+            <li><a href="">百度中国</a></li>
+            <li><a href="">搜狐中国</a></li>
+            <li><a href="">小米国际</a></li>
+            <li><a href="">阿里巴巴</a></li>
+            <li><a href="">华为国际</a></li>
+            <li><a href="">天猫国际</a></li>
+            <li><a href="">京东商城</a></li>
+        </ul>
+        <div class="list02"><i>更多合作企业》</i></div>
+    </div>
+    <div id="bottom"><img src="images/empbottom.gif"></div>
+</div>
+</body>
+</html>
